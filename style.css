@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Cinzel', serif;
+}
+
+body{
+    background-color: #0082be;
+}
+.drum-container{
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 260px;
+
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.drum-container h1{
+    text-align: center;
+    color: #0082be;
+}
+
+.drum-keys{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.drum-keys .key{
+    border: none;
+    background-color: rgb(141, 141, 141);
+    border-radius: 5px;
+    color: white;
+    width: calc(33.333% - 5px);
+    padding: 20px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    transition: .2s ease-in-out;
+}
+
+.drum-keys .key:hover{
+    background-color: #0082be;
+}
+
+.active{
+    background-color: #0082be !important;
+}
+.composition-container{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.composition-container button, input{
+    padding: 7px 0;
+}
+
+#composition-value{
+    outline: none;
+    font-size: .8rem;
+    padding: 8px 3px;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid rgb(167, 166, 166);
+
+    transition: .3s ease-in-out;
+}
+
+
+#composition-value::placeholder{
+    font-weight: 900;
+}
+
+#composition-value:focus{
+    border-color: #0082be;
+}
+.play-composition{
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    border: none;
+    background-color: rgb(141, 141, 141);
+    border-radius: 5px;
+    color: white;
+
+    transition: .3s ease-in-out;
+}
+
+.play-composition:hover{
+    background-color: #0082be
+}
